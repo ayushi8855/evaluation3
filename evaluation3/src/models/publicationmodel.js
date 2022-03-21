@@ -1,4 +1,4 @@
-const require = require("mongoose")
+const mongoose = require("mongoose")
 
 
 const publicationSchema=new mongoose.Schema({
@@ -9,5 +9,5 @@ const publicationSchema=new mongoose.Schema({
     versionKey:false,
     timestamps:true,
 })
-const publication =mongoose.model("publication",publicationSchema)
+const Publication =mongoose.model("publication",publicationSchema)
 module.exports=publication

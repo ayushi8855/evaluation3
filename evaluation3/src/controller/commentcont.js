@@ -2,7 +2,7 @@
 const express=require("express")
 const comment =require("../models/commentmodel")
 const router=express.Router()
-app.post("",async(req,res)=>{
+router.post("",async(req,res)=>{
     try {
         const comment= await comment.create(req.body);
       return  res.status(201).send(comment)
